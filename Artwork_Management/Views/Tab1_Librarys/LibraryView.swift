@@ -11,42 +11,31 @@ struct LibraryView: View {
 
     var body: some View {
 
-        VStack {
-            ScrollView(.horizontal) {
+        NavigationView {
 
-                LazyHStack {
+            ScrollView(.vertical) {
+
+                VStack(spacing: 20) {
+
                     
-                    ForEach(1...20, id: \.self) {value in
-                        Rectangle()
-                            .fill(Color.gray)
-                            .frame(width: 100, height: 100)
-                    } // ForEachここまで
 
 
-                } // LazyHStackここまで
-            } // ScrollViewここまで
+                    LibraryDetail(itemWidth: 250, itemHeight: 250, itemSpase: 60, itemNameTag: "Album")
 
-            ScrollView(.horizontal) {
-                LazyHStack {
+                    Spacer()
+
+                    LibraryDetail(itemWidth: 150, itemHeight: 150, itemSpase: 40, itemNameTag: "Single")
+
+                    LibraryDetail(itemWidth: 250, itemHeight: 200, itemSpase: 40, itemNameTag: "Picture")
+
+                    LibraryDetail(itemWidth: 150, itemHeight: 120, itemSpase: 40, itemNameTag: "Goods")
 
 
-                    ForEach(1...20, id: \.self) {value in
-                        Circle()
-                            .fill(Color.gray)
-                            .frame(width: 100, height: 100)
-                    } // ForEachここまで
-                } // LazyHStackここまで
-            }
-
-            Text("ライブラリ画面")
-                .font(.title)
-
-            Text("(アイテムのコレクションライブラリ)")
-                .padding()
-
-        } // VStackここまで
-    }
-}
+                } // VStack
+            } // ScrollView
+        } // NavigationView
+    } // body
+} // View
 
 struct ItemLibraryView_Previews: PreviewProvider {
     static var previews: some View {

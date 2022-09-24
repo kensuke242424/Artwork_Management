@@ -15,6 +15,7 @@
 		E08F273A28DDB53700329C5E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F273928DDB53700329C5E /* AccountView.swift */; };
 		E08F273C28DDB61A00329C5E /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F273B28DDB61A00329C5E /* LibraryView.swift */; };
 		E08F273E28DDB65F00329C5E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F273D28DDB65F00329C5E /* HomeView.swift */; };
+		E0CF7EEC28DEEED700735142 /* LibraryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF7EEB28DEEED700735142 /* LibraryDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E08F273928DDB53700329C5E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E08F273B28DDB61A00329C5E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		E08F273D28DDB65F00329C5E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E0CF7EEB28DEEED700735142 /* LibraryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E08F273B28DDB61A00329C5E /* LibraryView.swift */,
+				E0CF7EEB28DEEED700735142 /* LibraryDetail.swift */,
 			);
 			path = Tab1_Librarys;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				E08F273E28DDB65F00329C5E /* HomeView.swift in Sources */,
 				E08F272528DDA08E00329C5E /* Artwork_ManagementApp.swift in Sources */,
 				E08F273A28DDB53700329C5E /* AccountView.swift in Sources */,
+				E0CF7EEC28DEEED700735142 /* LibraryDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
