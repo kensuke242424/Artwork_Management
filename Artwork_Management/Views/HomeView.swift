@@ -10,12 +10,13 @@ import SwiftUI
 struct HomeView: View {
 
     @State private var tabIndex = 0
+    @State var isShowItemDetail = false
 
     var body: some View {
 
         TabView(selection: $tabIndex) {
 
-            LibraryView()
+            LibraryView(isShowItemDetail: $isShowItemDetail)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")

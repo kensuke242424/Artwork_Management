@@ -17,6 +17,7 @@
 		E08F273E28DDB65F00329C5E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F273D28DDB65F00329C5E /* HomeView.swift */; };
 		E0CF7EEC28DEEED700735142 /* LibraryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF7EEB28DEEED700735142 /* LibraryDetail.swift */; };
 		E0CF7EEE28DEFFEE00735142 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF7EED28DEFFEE00735142 /* ItemDetail.swift */; };
+		E0CF7EF028DF152D00735142 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CF7EEF28DF152D00735142 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		E08F273D28DDB65F00329C5E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E0CF7EEB28DEEED700735142 /* LibraryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetail.swift; sourceTree = "<group>"; };
 		E0CF7EED28DEFFEE00735142 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		E0CF7EEF28DF152D00735142 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		E08F273428DDB3CA00329C5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E0CF7EEF28DF152D00735142 /* ItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				E08F273C28DDB61A00329C5E /* LibraryView.swift in Sources */,
 				E08F273828DDB51600329C5E /* SalesView.swift in Sources */,
 				E08F273628DDB48100329C5E /* ItemStockView.swift in Sources */,
+				E0CF7EF028DF152D00735142 /* ItemModel.swift in Sources */,
 				E08F273E28DDB65F00329C5E /* HomeView.swift in Sources */,
 				E08F272528DDA08E00329C5E /* Artwork_ManagementApp.swift in Sources */,
 				E0CF7EEE28DEFFEE00735142 /* ItemDetail.swift in Sources */,

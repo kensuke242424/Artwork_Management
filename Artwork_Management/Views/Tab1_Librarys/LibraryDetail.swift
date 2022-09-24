@@ -12,11 +12,13 @@ struct LibraryDetail: View {
     var columns: [GridItem] = Array(repeating: .init(.flexible(),
                                                       spacing: 0), count: 1)
 
-    // アイテムの幅と間隔を指定します。
+    // アイテムのディテールを指定します。
     let itemWidth: CGFloat
     let itemHeight: CGFloat
     let itemSpase: CGFloat
     let itemNameTag: String
+
+    @Binding var isShowItemDetail: Bool
 
     var body: some View {
 
@@ -44,7 +46,7 @@ struct LibraryDetail: View {
                             .frame(width: itemWidth, height: itemHeight)
                             .shadow(radius: 7, x: 10, y: 6)
                             .overlay(
-                                Text("サンプル\(value)")
+                                Text("\(itemNameTag)\(value)")
                                     .font(.title3)
                                     .fontWeight(.heavy)
                                     .foregroundColor(.white)
@@ -60,6 +62,10 @@ struct LibraryDetail: View {
 
 struct LibraryDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryDetail(itemWidth: 220, itemHeight: 220, itemSpase: 40, itemNameTag: "Album")
+        LibraryDetail(itemWidth: 220,
+                      itemHeight: 220,
+                      itemSpase: 40,
+                      itemNameTag: "Album",
+                      isShowItemDetail: .constant(false))
     }
 }
