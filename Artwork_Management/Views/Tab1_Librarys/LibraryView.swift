@@ -43,7 +43,7 @@ struct LibraryView: View {
             } // ZStack
 
             .overlay(
-                ItemDetail(itemName: "a")
+                ItemShowDetail(itemName: "a")
                     .opacity(isShowItemDetail ? 0.6 : 0)
             )
         } // NavigationView
