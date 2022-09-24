@@ -17,9 +17,6 @@ struct LibraryView: View {
 
                 VStack(spacing: 20) {
 
-                    
-
-
                     LibraryDetail(itemWidth: 250, itemHeight: 250, itemSpase: 60, itemNameTag: "Album")
 
                     Spacer()
