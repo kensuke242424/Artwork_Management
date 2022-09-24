@@ -23,18 +23,18 @@ struct LibraryView: View {
                     VStack(spacing: 20) {
 
                         LibraryDetail(itemWidth: 250, itemHeight: 250, itemSpase: 60, itemNameTag: "Album",
-                                      isShowItemDetail: $isShowItemDetail)
+                                      itemColor: .gray, isShowItemDetail: $isShowItemDetail)
 
                         Spacer()
 
                         LibraryDetail(itemWidth: 150, itemHeight: 150, itemSpase: 40, itemNameTag: "Single",
-                                      isShowItemDetail: $isShowItemDetail)
+                                      itemColor: .yellow, isShowItemDetail: $isShowItemDetail)
 
                         LibraryDetail(itemWidth: 250, itemHeight: 200, itemSpase: 40, itemNameTag: "Picture",
-                                      isShowItemDetail: $isShowItemDetail)
+                                      itemColor: .red, isShowItemDetail: $isShowItemDetail)
 
                         LibraryDetail(itemWidth: 150, itemHeight: 120, itemSpase: 40, itemNameTag: "Goods",
-                                      isShowItemDetail: $isShowItemDetail)
+                                      itemColor: .blue, isShowItemDetail: $isShowItemDetail)
 
                         Spacer()
 
@@ -43,7 +43,7 @@ struct LibraryView: View {
             } // ZStack
 
             .overlay(
-                ItemShowDetail(itemName: "a")
+                LibraryDetailShow(itemName: "a")
                     .opacity(isShowItemDetail ? 0.6 : 0)
             )
         } // NavigationView

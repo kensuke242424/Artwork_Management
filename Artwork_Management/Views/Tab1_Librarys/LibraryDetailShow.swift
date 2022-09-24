@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemShowDetail: View {
+struct LibraryDetailShow: View {
 
     let screenSize = UIScreen.main.bounds
     let itemName: String
@@ -43,23 +43,12 @@ struct ItemShowDetail: View {
                         .foregroundColor(.white)
                 )
 
-            VStack {
-
-
-
-
-
-            }
-
-
-
-            
         } // ZStack
     } // body
 } // View
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ItemShowDetail(itemName: "サンプル１")
+        LibraryDetailShow(itemName: "サンプル１")
     }
 }

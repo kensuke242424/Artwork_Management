@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LibraryDetail: View {
 
-    var columns: [GridItem] = Array(repeating: .init(.flexible(),
+    var columnsH: [GridItem] = Array(repeating: .init(.flexible(),
                                                       spacing: 0), count: 1)
 
     // アイテムのディテールを指定します。
@@ -17,6 +17,7 @@ struct LibraryDetail: View {
     let itemHeight: CGFloat
     let itemSpase: CGFloat
     let itemNameTag: String
+    let itemColor: Color
 
     @Binding var isShowItemDetail: Bool
 
@@ -36,13 +37,13 @@ struct LibraryDetail: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
 
-                LazyHGrid(rows: columns, spacing: itemSpase) {
+                LazyHGrid(rows: columnsH, spacing: itemSpase) {
 
                     ForEach(1...20, id: \.self) {value in
 
                         // 制作物やジャケットのイメージが入ります。仮で図形を表示させています。
                         RoundedRectangle(cornerSize: .init(width: 10, height: 10))
-                            .foregroundColor(Color.gray)
+                            .foregroundColor(itemColor)
                             .frame(width: itemWidth, height: itemHeight)
                             .shadow(radius: 7, x: 10, y: 6)
                             .overlay(
@@ -66,6 +67,7 @@ struct LibraryDetail_Previews: PreviewProvider {
                       itemHeight: 220,
                       itemSpase: 40,
                       itemNameTag: "Album",
+                      itemColor: .gray,
                       isShowItemDetail: .constant(false))
     }
 }

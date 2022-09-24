@@ -47,13 +47,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
+
             HomeView()
-                .previewDevice("iPhone 14 Pro")
-                .previewDisplayName("iPhone 14 Pro")
-            HomeView()
-                .previewDevice("iPhone 12 Pro Max")
-                .previewDisplayName("My iPhone 12 ProMax")
-        }
     }
 }
