@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemStockControlView: View {
+struct ItemStockView: View {
     var body: some View {
 
         Text("アイテムストック管理画面")
@@ -18,6 +18,6 @@ struct ItemStockControlView: View {
 
 struct ItemStockControlView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemStockControlView()
+        ItemStockView()
     }
 }

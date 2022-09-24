@@ -11,22 +11,17 @@ struct HomeView: View {
 
     @State private var tabIndex = 0
 
-    // タブバー表示が消える
-//    init() {
-//            UITabBar.appearance().isHidden = true
-//        }
-
     var body: some View {
 
         TabView(selection: $tabIndex) {
 
-            ItemLibraryView()
+            LibraryView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                 }
 
-            ItemStockControlView()
+            ItemStockView()
                 .tabItem {
                     Image(systemName: "shippingbox.fill")
                     Text("inventory")
