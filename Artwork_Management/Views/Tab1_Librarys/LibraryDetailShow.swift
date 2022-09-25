@@ -19,7 +19,7 @@ struct LibraryDetailShow: View {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.black)
                 .frame(width: screenSize.width - 30,
-                       height: screenSize.height - 100)
+                       height: screenSize.height - 250)
                 .opacity(0.7)
 
                 .overlay(alignment: .top) {
@@ -37,11 +37,6 @@ struct LibraryDetailShow: View {
                         .padding()
                         .offset(y: 100)
                 }
-
-                .overlay (
-                    Text("アイテムの詳細説明")
-                        .foregroundColor(.white)
-                )
 
         } // ZStack
     } // body

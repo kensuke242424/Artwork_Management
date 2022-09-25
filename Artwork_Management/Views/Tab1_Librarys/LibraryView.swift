@@ -22,21 +22,18 @@ struct LibraryView: View {
 
                     VStack(spacing: 20) {
 
-                        LibraryDetail(itemWidth: 250, itemHeight: 250, itemSpase: 60, itemNameTag: "Album",
+                        LibraryListView(itemWidth: 250, itemHeight: 250, itemSpase: 60, itemNameTag: "Album",
                                       itemColor: .gray, isShowItemDetail: $isShowItemDetail)
 
-                        Spacer()
-
-                        LibraryDetail(itemWidth: 150, itemHeight: 150, itemSpase: 40, itemNameTag: "Single",
+                        LibraryListView(itemWidth: 180, itemHeight: 180, itemSpase: 40, itemNameTag: "Single",
                                       itemColor: .yellow, isShowItemDetail: $isShowItemDetail)
 
-                        LibraryDetail(itemWidth: 250, itemHeight: 200, itemSpase: 40, itemNameTag: "Picture",
+                        LibraryListView(itemWidth: 350, itemHeight: 300, itemSpase: 5, itemNameTag: "Picture",
                                       itemColor: .red, isShowItemDetail: $isShowItemDetail)
 
-                        LibraryDetail(itemWidth: 150, itemHeight: 120, itemSpase: 40, itemNameTag: "Goods",
+                        LibraryListView(itemWidth: 200, itemHeight: 150, itemSpase: 20, itemNameTag: "Goods",
                                       itemColor: .blue, isShowItemDetail: $isShowItemDetail)
 
-                        Spacer()
 
                     } // VStack
                 } // ScrollView

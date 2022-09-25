@@ -34,10 +34,10 @@ struct HomeView: View {
                     Text("Manage")
                 }
 
-            AccountView()
+            SystemView()
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("Account")
+                    Text("System")
                 }.badge("!")
 
         } // TabViewここまで

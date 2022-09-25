@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LibraryDetail: View {
+struct LibraryListView: View {
 
     var columnsH: [GridItem] = Array(repeating: .init(.flexible(),
                                                       spacing: 0), count: 1)
@@ -54,6 +54,9 @@ struct LibraryDetail: View {
                             )
 
                     } // ForEachここまで
+                    .padding(.bottom)
+                    .padding(.leading)
+
                 } // LazyHStackここまで
             } // ScrollViewここまで
         }
@@ -63,7 +66,7 @@ struct LibraryDetail: View {
 
 struct LibraryDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryDetail(itemWidth: 220,
+        LibraryListView(itemWidth: 220,
                       itemHeight: 220,
                       itemSpase: 40,
                       itemNameTag: "Album",

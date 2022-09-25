@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemStockList: View {
+struct ItemShowBlock: View {
 
     var columnsV: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
 
@@ -41,7 +41,7 @@ struct ItemStockList: View {
 
 struct ItemStockList_Previews: PreviewProvider {
     static var previews: some View {
-        ItemStockList(itemWidth: 180,
+        ItemShowBlock(itemWidth: 180,
                       itemHeight: 100,
                       itemSpase: 20,
                       itemNameTag: "Album")

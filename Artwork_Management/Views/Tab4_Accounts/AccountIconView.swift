@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AccountIcon: View {
+struct AccountIconView: View {
     var body: some View {
 
         VStack {
 
-            Text("Account")
+            Text("Account_Name")
                 .font(.title)
 
             Image(systemName: "person.circle.fill")
@@ -27,6 +27,6 @@ struct AccountIcon: View {
 
 struct AccountIcon_Previews: PreviewProvider {
     static var previews: some View {
-        AccountIcon()
+        AccountIconView()
     }
 }

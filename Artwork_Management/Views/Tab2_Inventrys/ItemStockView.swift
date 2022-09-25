@@ -34,10 +34,10 @@ struct ItemStockView: View {
                 .padding()
 
                 
-                ItemStockList(itemWidth: 180,
-                              itemHeight: 120,
+                ItemShowBlock(itemWidth: 180,
+                              itemHeight: 200,
                               itemSpase: 20,
-                              itemNameTag: "Album")
+                              itemNameTag: "アイテム")
 
             } // VStack
             .navigationTitle("ItemStock")
